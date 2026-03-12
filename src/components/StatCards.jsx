@@ -41,7 +41,7 @@ export default function StatCards({ data }) {
                 <div className="flex justify-between items-center">
                     <div>
                         <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', fontWeight: 600, textTransform: 'uppercase', display: 'flex', alignItems: 'center' }}>
-                            Működési Költségvetési Bevétel ({data.year})
+                            Működési költségvetési bevétel ({data.year})
                             {data.yoy && formatYoY(data.yoy.incomeTotal)}
                         </p>
                         <h2 style={{ fontSize: '2rem', marginTop: '0.5rem' }}>{formatCurrency(data.income.total)}</h2>
@@ -57,7 +57,7 @@ export default function StatCards({ data }) {
                 <div className="flex justify-between items-center">
                     <div>
                         <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', fontWeight: 600, textTransform: 'uppercase', display: 'flex', alignItems: 'center' }}>
-                            Működési Költségvetési Kiadás ({data.year})
+                            Működési költségvetési kiadás ({data.year})
                             {data.yoy && formatYoY(data.yoy.expenseTotal)}
                         </p>
                         <h2 style={{ fontSize: '2rem', marginTop: '0.5rem' }}>{formatCurrency(data.expense.total)}</h2>
@@ -73,7 +73,7 @@ export default function StatCards({ data }) {
                 <div className="flex justify-between items-center">
                     <div>
                         <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', fontWeight: 600, textTransform: 'uppercase', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                            Működési Költségvetési Egyenleg ({data.year})
+                            Működési költségvetési egyenleg ({data.year})
                         </p>
                         <h2 style={{ fontSize: '2rem', marginTop: '0.5rem', color: isPositiveBalance ? 'var(--accent-income)' : 'var(--accent-expense)' }}>
                             {formatCurrency(data.balance)}

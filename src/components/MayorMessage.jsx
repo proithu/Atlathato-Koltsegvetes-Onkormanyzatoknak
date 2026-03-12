@@ -18,7 +18,7 @@ export default function MayorMessage({ data }) {
         }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
                 <Quote size={32} color="var(--brand-primary)" style={{ opacity: 0.5 }} />
-                <h3 style={{ fontSize: '1.4rem', margin: 0, color: 'var(--text-main)' }}>A {config.alapEv}-os Elfogadott Költségvetés – Polgármesteri Tájékoztató</h3>
+                <h3 style={{ fontSize: '1.4rem', margin: 0, color: 'var(--text-main)' }}>A {config.alapEv}-os elfogadott költségvetés – polgármesteri tájékoztató</h3>
             </div>
 
             <div style={{
@@ -40,7 +40,7 @@ export default function MayorMessage({ data }) {
                 }}>
                     <img
                         src={config.kepek.polgarmester}
-                        alt={`${config.szovegek.polgarmesterNeve} Polgármester`}
+                        alt={`${config.szovegek.polgarmesterNeve} polgármester`}
                         style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                         onError={(e) => {
                             e.target.onerror = null;
@@ -63,7 +63,7 @@ export default function MayorMessage({ data }) {
 
                 <div style={{ flex: 1, minWidth: 'min(100%, 300px)' }}>
                     <p style={{ fontSize: '1.05rem', lineHeight: 1.6, color: 'var(--text-muted)', fontStyle: 'italic', margin: 0 }}>
-                        <strong style={{ color: 'var(--text-main)', fontStyle: 'normal' }}>{config.szovegek.polgarmesterNeve} (Polgármester):</strong> <span dangerouslySetInnerHTML={{ __html: `"${config.szovegek.polgarmesterKoszonto.replace('{alapEv}', config.alapEv).replace('{varosNeve}', config.varosNeve.split(' ')[0])}"` }} />
+                        <strong style={{ color: 'var(--text-main)', fontStyle: 'normal' }}>{config.szovegek.polgarmesterNeve} (polgármester):</strong> <q dangerouslySetInnerHTML={{ __html: config.szovegek.polgarmesterKoszonto.replace('{alapEv}', config.alapEv).replace('{varosNeve}', config.varosNeve.split(' ')[0]) }} />
                     </p>
                 </div>
             </div>

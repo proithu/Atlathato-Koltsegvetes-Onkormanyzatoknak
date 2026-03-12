@@ -42,7 +42,7 @@ function App() {
     return (
       <div className="app-container justify-center items-center" style={{ minHeight: '100vh' }}>
         <div className="loading-spinner"></div>
-        <p style={{ marginTop: '1rem', color: 'var(--text-muted)' }}>Adatok betöltése és feldolgozása...</p>
+        <p style={{ marginTop: '1rem', color: 'var(--text-muted)' }}>Adatok betöltése és feldolgozása…</p>
       </div>
     );
   }
@@ -59,9 +59,9 @@ function App() {
         <img src={config.kepek.cimer} alt={`${config.varosNeve} Címere`} style={{ width: '120px', height: 'auto', marginBottom: '1.5rem', filter: 'drop-shadow(0 4px 6px rgba(0,0,0,0.1))' }} />
         <div style={{ display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem', marginBottom: '1rem', padding: '0.5rem 1rem', background: 'var(--surface)', borderRadius: '2rem', border: '1px solid var(--brand-primary-glow)' }}>
           <Activity size={18} color="var(--brand-primary)" />
-          <span style={{ fontSize: '0.9rem', color: 'var(--brand-primary)', fontWeight: 600 }}>Önkormányzati Költségvetés</span>
+          <span style={{ fontSize: '0.9rem', color: 'var(--brand-primary)', fontWeight: 600 }}>Önkormányzati költségvetés</span>
         </div>
-        <h1 style={{ fontSize: '2.5rem', lineHeight: 1.2 }}>{config.varosNeve} <br /><span className="gradient-text">Átlátható költségvetése</span></h1>
+        <h1 style={{ fontSize: '2.5rem', lineHeight: 1.2 }}>{config.varosNeve} <br /><span className="gradient-text">átlátható költségvetése</span></h1>
         <p style={{ marginTop: '0.5rem' }}>Ismerje meg településünk részletes és átlátható pénzügyi adatait ({firstYear}–{lastYear}), beleértve a {config.alapEv}. évi tervezetet.</p>
       </header>
 
@@ -86,7 +86,7 @@ function App() {
               gap: '0.3rem'
             }}
           >
-            {item.year} {item.isPlan && <span style={{ fontSize: '0.7rem', opacity: 0.8 }}>(Terv)</span>}
+            {item.year} {item.isPlan && <span style={{ fontSize: '0.7rem', opacity: 0.8 }}>(terv)</span>}
           </button>
         ))}
       </div>
@@ -117,7 +117,7 @@ function App() {
         </div>
         <div style={{ width: '100%', maxWidth: '600px', borderTop: '1px solid rgba(0,0,0,0.1)', margin: '0.5rem 0' }}></div>
         <p style={{ fontSize: '0.85rem', textAlign: 'center', opacity: 0.8 }}>
-          A {config.alapEv - 1}. év előtti adatok tényadatok (Zárszámadás), a {config.alapEv}. évi adatok a tervezet (Eredeti Előirányzat) alapján jelennek meg.
+          A {config.alapEv - 1}. év előtti adatok tényadatok (zárszámadás), a {config.alapEv}. évi adatok a tervezet (eredeti előirányzat) alapján jelennek meg.
         </p>
       </footer>
     </div>

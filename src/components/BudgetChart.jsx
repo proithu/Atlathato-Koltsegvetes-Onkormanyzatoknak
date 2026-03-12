@@ -28,8 +28,8 @@ export default function BudgetChart({ data, onYearClick, selectedYear }) {
     // Map data to display format
     const chartData = data.map(item => ({
         name: item.year.toString(),
-        "Működési Bevétel": item.income.total,
-        "Működési Kiadás": item.expense.total,
+        "Működési bevétel": item.income.total,
+        "Működési kiadás": item.expense.total,
         Egyenleg: item.balance,
         isPlan: item.isPlan,
         year: item.year
@@ -37,7 +37,7 @@ export default function BudgetChart({ data, onYearClick, selectedYear }) {
 
     return (
         <div className="glass-panel" style={{ padding: '1.5rem', display: 'flex', flexDirection: 'column', gap: '1rem', height: '400px' }}>
-            <h3 style={{ fontSize: '1.2rem', color: 'var(--text-muted)', margin: 0 }}>Költségvetési Trendek (Éves Bontás)</h3>
+            <h3 style={{ fontSize: '1.2rem', color: 'var(--text-muted)', margin: 0 }}>Költségvetési trendek (éves bontás)</h3>
             <div style={{ flex: 1, minHeight: 0 }}>
                 <ResponsiveContainer width="100%" height="100%">
                     <AreaChart
@@ -71,7 +71,7 @@ export default function BudgetChart({ data, onYearClick, selectedYear }) {
                             tick={{ fill: 'var(--text-muted)' }}
                             tickLine={false}
                             axisLine={false}
-                            tickFormatter={(value) => `${(value / 1e9).toFixed(1)} Mrd`}
+                            tickFormatter={(value) => `${(value / 1e9).toLocaleString('hu-HU', { minimumFractionDigits: 1, maximumFractionDigits: 1 })} Mrd`}
                             width={65}
                         />
                         <Tooltip content={<CustomTooltip />} cursor={{ stroke: 'rgba(0,0,0,0.15)', strokeWidth: 1, strokeDasharray: '5 5' }} />
@@ -79,7 +79,7 @@ export default function BudgetChart({ data, onYearClick, selectedYear }) {
 
                         <Area
                             type="monotone"
-                            dataKey="Működési Bevétel"
+                            dataKey="Működési bevétel"
                             stroke="var(--accent-income)"
                             strokeWidth={3}
                             fillOpacity={1}
@@ -88,7 +88,7 @@ export default function BudgetChart({ data, onYearClick, selectedYear }) {
                         />
                         <Area
                             type="monotone"
-                            dataKey="Működési Kiadás"
+                            dataKey="Működési kiadás"
                             stroke="var(--accent-expense)"
                             strokeWidth={3}
                             fillOpacity={1}

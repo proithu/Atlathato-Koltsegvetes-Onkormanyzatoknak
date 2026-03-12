@@ -12,7 +12,7 @@
     },
     "szovegek": {
         "polgarmesterNeve": "Dr. Minta Péter",
-        "polgarmesterKoszonto": "Tisztelt Mintavárosi Lakosok! Örömmel mutatjuk be Önöknek településünk {alapEv}-es költségvetésének átlátható összefoglalóját. Célunk, hogy minden polgár számára <strong>közérthetővé</strong> tegyük, mire fordítja az önkormányzat a közös forrásainkat. Bízunk benne, hogy ez az eszköz hozzájárul a bizalom erősítéséhez és a közügyek iránti érdeklődés növeléséhez. {varosNeve} a következő években is a felelős, átlátható gazdálkodást tartja szem előtt.",
+        "polgarmesterKoszonto": "Tisztelt Mintavárosi Lakosok! Örömmel mutatjuk be Önöknek településünk {alapEv}. évi költségvetésének átlátható összefoglalóját. Célunk, hogy minden polgár számára <strong>közérthetővé</strong> tegyük, mire fordítja az önkormányzat a közös forrásainkat. Bízunk benne, hogy ez az eszköz hozzájárul a bizalom erősítéséhez és a közügyek iránti érdeklődés növeléséhez. {varosNeve} a következő években is a felelős, átlátható gazdálkodást tartja szem előtt.",
         "kisokosPeldak": {
             "kotelezo": "pl. óvodák fenntartása, közvilágítás, hivatal működése",
             "onkentes": "fejlesztésekre, beruházásokra és pályázatokra"

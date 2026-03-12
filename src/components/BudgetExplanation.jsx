@@ -30,7 +30,7 @@ export default function BudgetExplanation() {
                         <div style={{ padding: '0.8rem', background: 'rgba(99, 102, 241, 0.15)', borderRadius: '12px', color: '#6366f1' }}>
                             <CalendarHeart size={24} />
                         </div>
-                        <h4 style={{ fontSize: '1.1rem', margin: 0, color: 'var(--text-main)' }}>1. A Tervezési Folyamat</h4>
+                        <h4 style={{ fontSize: '1.1rem', margin: 0, color: 'var(--text-main)' }}>1. A tervezési folyamat</h4>
                     </div>
                     <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', lineHeight: 1.6, margin: 0 }}>
                         A következő év költségvetésének tervezése már az előző év őszén elkezdődik. Először a <strong>kötelező feladatokat</strong> ({config.szovegek.kisokosPeldak.kotelezo}) kell biztosítani. Miután ezek megvannak, a fennmaradó keretet a képviselő-testület a <strong>{config.szovegek.kisokosPeldak.onkentes}</strong> (önként vállalt feladatok) csoportosítja.
@@ -46,8 +46,8 @@ export default function BudgetExplanation() {
                         <h4 style={{ fontSize: '1.1rem', margin: 0, color: 'var(--text-main)' }}>2. Működési kiadások</h4>
                     </div>
                     <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', lineHeight: 1.6, margin: 0 }}>
-                        A város mindennapos túléléséhez szükséges pénzek. Ide tartoznak a bérköltségek (Személyi juttatások), a közműdíjak és külsős szolgáltatások (Dologi kiadások),
-                        valamint az <strong>Állam felé fizetendő, kötelező Szolidaritási Hozzájárulás</strong> (ami a tehetősebb településektől elvont pénz a szegényebbek javára).
+                        A város mindennapos túléléséhez szükséges pénzek. Ide tartoznak a bérköltségek (személyi juttatások), a közműdíjak és külsős szolgáltatások (dologi kiadások),
+                        valamint az <strong>állam felé fizetendő, kötelező szolidaritási hozzájárulás</strong> (ami a tehetősebb településektől elvont pénz a szegényebbek javára).
                     </p>
                 </div>
 
@@ -57,11 +57,11 @@ export default function BudgetExplanation() {
                         <div style={{ padding: '0.8rem', background: 'rgba(59, 130, 246, 0.15)', borderRadius: '12px', color: '#3b82f6' }}>
                             <TrendingUp size={24} />
                         </div>
-                        <h4 style={{ fontSize: '1.1rem', margin: 0, color: 'var(--text-main)' }}>3. Beruházások (Felhalmozás)</h4>
+                        <h4 style={{ fontSize: '1.1rem', margin: 0, color: 'var(--text-main)' }}>3. Beruházások (felhalmozás)</h4>
                     </div>
                     <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', lineHeight: 1.6, margin: 0 }}>
                         Ezekből a forrásokból épülnek az új utak, óvodák, egészségügyi intézmények és újulnak meg a közterek.
-                        A beruházásokhoz az önkormányzat <strong>saját forrást</strong>, illetve (ha van rá lehetőség) <strong>Hazai vagy EU-s pályázati támogatásokat</strong> használ fel.
+                        A beruházásokhoz az önkormányzat <strong>saját forrást</strong>, illetve (ha van rá lehetőség) <strong>hazai vagy EU-s pályázati támogatásokat</strong> használ fel.
                         Ezek alkotják a város vagyonának növekedését.
                     </p>
                 </div>
@@ -75,19 +75,19 @@ export default function BudgetExplanation() {
                         <h4 style={{ fontSize: '1.1rem', margin: 0, color: 'var(--text-main)' }}>4. Honnan van a pénz?</h4>
                     </div>
                     <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', lineHeight: 1.6, margin: 0 }}>
-                        A költségvetés gerincét a központi állami támogatások (amik a lakosság számától és feladatoktól függenek) és a <strong>helyi adók</strong> (Iparűzési Adó - IPA, Építményadó) adják.
-                        Minél stabilabb a helyi gazdaság és minél több vállalkozás működik a városban, annál több jut utána fejlesztésekre (ezt hívjuk Pénzügyi Autonómiának).
+                        A költségvetés gerincét a központi állami támogatások (amik a lakosság számától és feladatoktól függenek) és a <strong>helyi adók</strong> (iparűzési adó – IPA, építményadó) adják.
+                        Minél stabilabb a helyi gazdaság és minél több vállalkozás működik a városban, annál több jut utána fejlesztésekre (ezt hívjuk <i>pénzügyi autonómiának</i>).
                     </p>
                 </div>
 
             </div>
 
             <div style={{ marginTop: '1rem', padding: '1.5rem', background: 'rgba(0, 0, 0, 0.03)', borderRadius: '1rem', border: '1px solid rgba(0,0,0,0.06)' }}>
-                <h5 style={{ fontSize: '1rem', color: 'var(--text-main)', marginBottom: '0.5rem' }}>Eredeti Előirányzat vs. Zárszámadás</h5>
+                <h5 style={{ fontSize: '1rem', color: 'var(--text-main)', marginBottom: '0.5rem' }}>Eredeti előirányzat vs. zárszámadás</h5>
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', lineHeight: 1.6, margin: 0 }}>
-                    Fontos fogalmak! Az adott év elején elfogadott tervet hívjuk <strong>Költségvetési Tervezetnek / Eredeti Előirányzatnak</strong> (pl. a {config.alapEv}-os adatok).
+                    Fontos fogalmak! Az adott év elején elfogadott tervet hívjuk <strong>költségvetési tervezetnek / eredeti előirányzatnak</strong> (pl. a {config.alapEv}. évi adatok).
                     Azonban év közben történhetnek változások (pl. az önkormányzat nyer egy 1 milliárdos pályázatot, amit bele kell írni).
-                    Az év végén, a ténylegesen elköltött összegeket tartalmazó végleges listát hívjuk <strong>Zárszámadásnak (Tényadatoknak)</strong>. Az átláthatóság érdekében {config.alapEv - 1}-ig visszamenőleg már a valós Tényadatokat láthatja a görbéken!
+                    Az év végén, a ténylegesen elköltött összegeket tartalmazó végleges listát hívjuk <strong>zárszámadásnak (tényadatoknak)</strong>. Az átláthatóság érdekében {config.alapEv - 1}-ig már a valós tényadatokat láthatja a görbéken!
                 </p>
             </div>
 
