@@ -12,7 +12,7 @@ const formatCurrencyMio = (val) => {
         style: 'currency',
         currency: 'HUF',
         maximumFractionDigits: 0
-    }).format(val / 1000000) + ' M';
+    }).format(val);
 };
 
 const formatYoY = (val) => {
@@ -62,13 +62,13 @@ export default function KeyIndicators({ data, historicalData }) {
     const taxTrendData = historicalData.map(d => ({
         year: d.year,
         Iparűzési: d.income.ipa,
-        "Építmény- és Telekadó": d.income.epitmeny + d.income.telek
+        "Építmény- és telekadó": d.income.epitmeny + d.income.telek
     }));
 
     // Trend for Solidarity Tax
     const solidarityTrend = historicalData.map(d => ({
         year: d.year,
-        "Szolidaritási Hozzájárulás": d.expense.szolidaritas || 0
+        "Szolidaritási hozzájárulás": d.expense.szolidaritas || 0
     }));
 
     return (
@@ -86,7 +86,7 @@ export default function KeyIndicators({ data, historicalData }) {
                             <Wallet size={24} color="#034E81" />
                         </div>
                         <div>
-                            <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', fontWeight: 600, textTransform: 'uppercase' }}>Pénzügyi Autonómia</p>
+                            <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', fontWeight: 600, textTransform: 'uppercase' }}>Pénzügyi autonómia</p>
                             <h2 style={{ fontSize: '1.8rem' }}>{formatPercent(autonomyRate)}</h2>
                         </div>
                     </div>
@@ -102,7 +102,7 @@ export default function KeyIndicators({ data, historicalData }) {
                             <Banknote size={24} color="#f59e0b" />
                         </div>
                         <div>
-                            <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', fontWeight: 600, textTransform: 'uppercase' }}>Állami Finanszírozás</p>
+                            <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', fontWeight: 600, textTransform: 'uppercase' }}>Állami finanszírozás</p>
                             <h2 style={{ fontSize: '1.8rem' }}>{formatPercent(stateDependencyRate)}</h2>
                         </div>
                     </div>
@@ -118,7 +118,7 @@ export default function KeyIndicators({ data, historicalData }) {
                             <Building2 size={24} color="#ec4899" />
                         </div>
                         <div>
-                            <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', fontWeight: 600, textTransform: 'uppercase' }}>Működtetési Teher</p>
+                            <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', fontWeight: 600, textTransform: 'uppercase' }}>Működtetési teher</p>
                             <h2 style={{ fontSize: '1.8rem' }}>{formatPercent(operationSafetyRate)}</h2>
                         </div>
                     </div>
@@ -133,16 +133,17 @@ export default function KeyIndicators({ data, historicalData }) {
 
                 {/* Trend of Autonomy */}
                 <div className="glass-panel" style={{ padding: '1.5rem', height: '400px', display: 'flex', flexDirection: 'column' }}>
-                    <h4 style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>Autonómia vs Állami Finanszírozás Trendje (%)</h4>
+                    <h4 style={{ color: 'var(--text-muted)', marginBottom: '1rem' }}>Autonómia/állami finanszírozás trendje</h4>
                     <div style={{ flex: 1, minHeight: 0 }}>
                         <ResponsiveContainer width="100%" height="100%">
                             <AreaChart data={trendData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
                                 <CartesianGrid strokeDasharray="3 3" stroke="rgba(0,0,0,0.08)" vertical={false} />
                                 <XAxis dataKey="year" tick={{ fill: 'var(--text-muted)', fontSize: 12 }} axisLine={false} tickLine={false} />
-                                <YAxis tick={{ fill: 'var(--text-muted)', fontSize: 12 }} axisLine={false} tickLine={false} />
+                                <YAxis tick={{ fill: 'var(--text-muted)', fontSize: 12 }} axisLine={false} tickLine={false} unit="%" />
                                 <Tooltip
                                     contentStyle={{ background: 'var(--surface)', border: '1px solid var(--glass-border)', borderRadius: '8px', color: 'var(--text-main)' }}
                                     itemStyle={{ fontWeight: 'bold' }}
+                                    separator=": "
                                     formatter={(value) => new Intl.NumberFormat('hu-HU', { style: 'percent', maximumFractionDigits: 1 }).format(value / 100)}
                                 />
                                 <Area type="monotone" dataKey="Autonómia" stackId="1" stroke="#034E81" fill="#034E81" fillOpacity={0.6} />
@@ -156,7 +157,7 @@ export default function KeyIndicators({ data, historicalData }) {
                 <div className="glass-panel" style={{ padding: '1.5rem', height: '400px', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                     <div className="responsive-header">
                         <div>
-                            <h4 style={{ color: 'var(--text-muted)' }}>Helyi Adók Növekedése (M Ft)</h4>
+                            <h4 style={{ color: 'var(--text-muted)' }}>Helyi adók növekedése (M Ft)</h4>
                             {/* Ide írhatsz települési adópolitikai megjegyzést, ha van ilyen */}
                         </div>
                         <div className="responsive-stats">
@@ -165,7 +166,7 @@ export default function KeyIndicators({ data, historicalData }) {
                                 {data.yoy && formatYoY(data.yoy.ipa)}
                             </div>
                             <div className="responsive-stats-row" style={{ marginBottom: 0 }}>
-                                Építmény- és Telekadó arány: {formatPercent(epitmenyTelekRatio)}
+                                Építmény- és telekadó arány: {formatPercent(epitmenyTelekRatio)}
                             </div>
                         </div>
                     </div>
@@ -184,11 +185,12 @@ export default function KeyIndicators({ data, historicalData }) {
                                 <Tooltip
                                     contentStyle={{ background: 'var(--surface)', border: '1px solid var(--glass-border)', borderRadius: '8px', color: 'var(--text-main)' }}
                                     itemStyle={{ fontWeight: 'bold' }}
+                                    separator=": "
                                     formatter={(value) => new Intl.NumberFormat('hu-HU', { style: 'currency', currency: 'HUF', maximumFractionDigits: 0 }).format(value)}
                                 />
                                 <Legend wrapperStyle={{ paddingTop: '10px', fontSize: '0.85rem', color: 'var(--text-muted)' }} />
                                 <Bar dataKey="Iparűzési" stackId="a" fill="#034E81" radius={[0, 0, 4, 4]} />
-                                <Bar dataKey="Építmény- és Telekadó" stackId="a" fill="#00582A" radius={[4, 4, 0, 0]} />
+                                <Bar dataKey="Építmény- és telekadó" stackId="a" fill="#00582A" radius={[4, 4, 0, 0]} />
                             </BarChart>
                         </ResponsiveContainer>
                     </div>
@@ -218,9 +220,10 @@ export default function KeyIndicators({ data, historicalData }) {
                             <Tooltip
                                 contentStyle={{ background: 'var(--surface)', border: '1px solid var(--glass-border)', borderRadius: '8px', color: 'var(--text-main)' }}
                                 itemStyle={{ fontWeight: 'bold', color: '#ef4444' }}
+                                separator=": "
                                 formatter={(value) => new Intl.NumberFormat('hu-HU', { style: 'currency', currency: 'HUF', maximumFractionDigits: 0 }).format(value)}
                             />
-                            <Line type="monotone" dataKey="Szolidaritási Hozzájárulás" stroke="#ef4444" strokeWidth={4} dot={{ r: 6, fill: '#ef4444', stroke: '#ffffff', strokeWidth: 2 }} />
+                            <Line type="monotone" dataKey="Szolidaritási hozzájárulás" stroke="#ef4444" strokeWidth={4} dot={{ r: 6, fill: '#ef4444', stroke: '#ffffff', strokeWidth: 2 }} />
                         </LineChart>
                     </ResponsiveContainer>
                 </div>

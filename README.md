@@ -226,7 +226,7 @@ firebase deploy
 ### Saját szerver / egyedi domain
 
 ```bash
-npm run build
+npm i && npm run build
 ```
 A `dist/` mappa tartalmát másold fel bármelyik statikus hosting szolgáltatásra (Apache, Nginx, stb.).
 

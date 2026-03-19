@@ -2,9 +2,9 @@
     {
         "icon": "Building2",
         "colorRef": "elsodleges",
-        "title": "Művelődési Ház felújítása",
+        "title": "Művelődési ház felújítása",
         "amount": "120 millió Ft",
-        "desc": "A település központi művelődési házának teljes energetikai korszerűsítése, akadálymentesítése és belső felújítása."
+        "desc": "A Petőfi Sándor Művelődési Ház és Könyvtár teljes energetikai korszerűsítése, akadálymentesítése és belső felújítása."
     },
     {
         "icon": "Route",
@@ -16,7 +16,7 @@
     {
         "icon": "Smile",
         "colorRef": "masodlagos",
-        "title": "Központi Játszótér bővítése",
+        "title": "Központi játszótér bővítése",
         "amount": "Tervezési fázis",
         "desc": "Új, modern játszóeszközök telepítése és a zöldterület bővítése a Városligetben, minden korosztály számára."
     }
