@@ -19,8 +19,8 @@
         }
     },
     "kepek": {
-        "cimer": "/cimer.svg",
-        "polgarmester": "/mayor.svg"
+        "cimer": "/cimer.png",
+        "polgarmester": "/mayor.png"
     },
     "szekciok": {
         "polgarmesteriUzenet": true,
