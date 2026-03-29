@@ -1,5 +1,5 @@
 {
-    "varosNeve": "Mintaváros Önkormányzata",
+    "varosNeve": "Sóskút Község Önkormányzata",
     "alapEv": 2026,
     "szinek": {
         "elsodleges": "#034E81",
@@ -7,12 +7,12 @@
         "harmadlagos": "#3681B4"
     },
     "elerhetoseg": {
-        "cim": "1234 Mintaváros, Fő utca 1.",
-        "weboldal": "https://mintavaros.hu"
+        "cim": "2038 Sóskút, Szabadság tér 1.",
+        "weboldal": "https://soskut.hu"
     },
     "szovegek": {
-        "polgarmesterNeve": "Dr. Minta Péter",
-        "polgarmesterKoszonto": "Tisztelt Mintavárosi Lakosok! Örömmel mutatjuk be Önöknek településünk {alapEv}. évi költségvetésének átlátható összefoglalóját. Célunk, hogy minden polgár számára <strong>közérthetővé</strong> tegyük, mire fordítja az önkormányzat a közös forrásainkat. Bízunk benne, hogy ez az eszköz hozzájárul a bizalom erősítéséhez és a közügyek iránti érdeklődés növeléséhez. {varosNeve} a következő években is a felelős, átlátható gazdálkodást tartja szem előtt.",
+        "polgarmesterNeve": "Mészáros József",
+        "polgarmesterKoszonto": "Tisztelt Sóskúti Lakosok! Örömmel mutatjuk be Önöknek településünk {alapEv}. évi költségvetésének átlátható összefoglalóját. Célunk, hogy minden polgár számára <strong>közérthetővé</strong> tegyük, mire fordítja az önkormányzat a közös forrásainkat. Bízunk benne, hogy ez az eszköz hozzájárul a bizalom erősítéséhez és a közügyek iránti érdeklődés növeléséhez. {varosNeve} a következő években is a felelős, átlátható gazdálkodást tartja szem előtt.",
         "kisokosPeldak": {
             "kotelezo": "pl. óvodák fenntartása, közvilágítás, hivatal működése",
             "onkentes": "fejlesztésekre, beruházásokra és pályázatokra"
