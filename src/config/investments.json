@@ -7,42 +7,42 @@
         "desc": "Az épület munkálatainak a befejezése, pincerész kivitelezési munkálatainak az elvégzése, légtechnika kialakítása, pincerész vízszigetelése."
     },
     {
-        "icon": "Route",
-        "colorRef": "harmadlagos",
+        "icon": "map",
+        "colorRef": "elsodleges",
         "title": "Településterv készítése",
         "amount": "25 millió Ft",
         "desc": "Sóskút településtervének elkészítése a  (Határidő: 2027. Június 30.)."
     },
     {
-        "icon": "Smile",
-        "colorRef": "masodlagos",
+        "icon": "road",
+        "colorRef": "elsodleges",
         "title": "Út, árok és járda létesítése",
         "amount": "182 millió Ft",
         "desc": "Sóskút belterületen út, járda és gépkocsibeállók létesítése a Bajcsy Zsilinszky és Petőfi Sándor utcákban."
     },
     {
-        "icon": "Building2",
+        "icon": "cctv",
         "colorRef": "elsodleges",
         "title": "Köztéri kamerák és trafiboxok",
         "amount": "36 millió Ft",
         "desc": "Új köztéri kamerák létesítése Sóskút Öreghegyen a Bástya dűlő, Széles utca, Szent Orbán út, valamint Trafibox telepítése a Mártirok útja, Petőfi Sándor utca és Temető utca helyszíneken."
     },
     {
-        "icon": "Building2",
+        "icon": "toolbox",
         "colorRef": "elsodleges",
         "title": "Gépek, járművek",
         "amount": "45 millió Ft",
         "desc": "A falugondnokság részére új gépek és berendezések beszerzése: teherautó, seprőgép adapter, nagyteljesítményű ágdaráló."
     },
     {
-        "icon": "Building2",
+        "icon": "amphora",
         "colorRef": "elsodleges",
         "title": "Urnafal bővítése",
         "amount": "2,5 millió Ft",
         "desc": "A Liget utcai temetőben 48 férőhelyes új urnafal bővítésére kerül sor."
     },
     {
-        "icon": "Building2",
+        "icon": "rose",
         "colorRef": "elsodleges",
         "title": "Kerítésépítés",
         "amount": "10 millió Ft",
@@ -56,7 +56,7 @@
         "desc": "A település központjában új 56-os emlékmű létesítése."
     },
     {
-        "icon": "Building2",
+        "icon": "tower-control",
         "colorRef": "elsodleges",
         "title": "Gyalogátkelőhelyek",
         "amount": "60 millió Ft",
