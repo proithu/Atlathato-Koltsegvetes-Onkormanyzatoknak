@@ -61,7 +61,7 @@ function App() {
           <Activity size={18} color="var(--brand-primary)" />
           <span style={{ fontSize: '0.9rem', color: 'var(--brand-primary)', fontWeight: 600 }}>Önkormányzati költségvetés</span>
         </div>
-        <h1 style={{ fontSize: '2.5rem', lineHeight: 1.2 }}>{config.varosNeve} <br /><span className="gradient-text">átlátható költségvetése</span></h1>
+        <h1 style={{ fontSize: '2.5rem', lineHeight: 1.2 }}>{config.varosNeve} <br /><span className="gradient-text" style={{ color: 'var(--brand-primary)' }}>átlátható költségvetése</span></h1>
         <p style={{ marginTop: '0.5rem' }}>Ismerje meg településünk részletes és átlátható pénzügyi adatait ({firstYear}–{lastYear}), beleértve a {config.alapEv}. évi tervezetet.</p>
       </header>
 
