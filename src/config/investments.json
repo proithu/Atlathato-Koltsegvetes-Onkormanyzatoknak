@@ -7,56 +7,56 @@
         "desc": "Az épület munkálatainak a befejezése, pincerész kivitelezési munkálatainak az elvégzése, légtechnika kialakítása, pincerész vízszigetelése."
     },
     {
-        "icon": "map",
+        "icon": "",
         "colorRef": "elsodleges",
         "title": "Településterv készítése",
         "amount": "25 millió Ft",
         "desc": "Sóskút településtervének elkészítése a  (Határidő: 2027. Június 30.)."
     },
     {
-        "icon": "road",
+        "icon": "Route",
         "colorRef": "elsodleges",
         "title": "Út, árok és járda létesítése",
         "amount": "182 millió Ft",
         "desc": "Sóskút belterületen út, járda és gépkocsibeállók létesítése a Bajcsy Zsilinszky és Petőfi Sándor utcákban."
     },
     {
-        "icon": "cctv",
+        "icon": "",
         "colorRef": "elsodleges",
         "title": "Köztéri kamerák és trafiboxok",
         "amount": "36 millió Ft",
         "desc": "Új köztéri kamerák létesítése Sóskút Öreghegyen a Bástya dűlő, Széles utca, Szent Orbán út, valamint Trafibox telepítése a Mártirok útja, Petőfi Sándor utca és Temető utca helyszíneken."
     },
     {
-        "icon": "toolbox",
+        "icon": "",
         "colorRef": "elsodleges",
         "title": "Gépek, járművek",
         "amount": "45 millió Ft",
         "desc": "A falugondnokság részére új gépek és berendezések beszerzése: teherautó, seprőgép adapter, nagyteljesítményű ágdaráló."
     },
     {
-        "icon": "amphora",
+        "icon": "",
         "colorRef": "elsodleges",
         "title": "Urnafal bővítése",
         "amount": "2,5 millió Ft",
         "desc": "A Liget utcai temetőben 48 férőhelyes új urnafal bővítésére kerül sor."
     },
     {
-        "icon": "rose",
+        "icon": "TreePine",
         "colorRef": "elsodleges",
         "title": "Kerítésépítés",
         "amount": "10 millió Ft",
         "desc": "Az Önkormányzat tulajdonában lévő 3111 és 3112 HRSZ számú saját ingatlanok geodéziai kimérése és a teljes terület körbekerítése."
     },
     {
-        "icon": "Building2",
+        "icon": "Landmark",
         "colorRef": "elsodleges",
         "title": "56-os emlékmű",
         "amount": "15 millió Ft",
         "desc": "A település központjában új 56-os emlékmű létesítése."
     },
     {
-        "icon": "tower-control",
+        "icon": "Route",
         "colorRef": "elsodleges",
         "title": "Gyalogátkelőhelyek",
         "amount": "60 millió Ft",
