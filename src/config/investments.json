@@ -7,7 +7,7 @@
         "desc": "Az épület munkálatainak a befejezése, pincerész kivitelezési munkálatainak az elvégzése, légtechnika kialakítása, pincerész vízszigetelése."
     },
     {
-        "icon": "",
+        "icon": "MapPin",
         "colorRef": "elsodleges",
         "title": "Településterv készítése",
         "amount": "25 millió Ft",
@@ -21,21 +21,21 @@
         "desc": "Sóskút belterületen út, járda és gépkocsibeállók létesítése a Bajcsy Zsilinszky és Petőfi Sándor utcákban."
     },
     {
-        "icon": "",
+        "icon": "MapPin",
         "colorRef": "elsodleges",
         "title": "Köztéri kamerák és trafiboxok",
         "amount": "36 millió Ft",
         "desc": "Új köztéri kamerák létesítése Sóskút Öreghegyen a Bástya dűlő, Széles utca, Szent Orbán út, valamint Trafibox telepítése a Mártirok útja, Petőfi Sándor utca és Temető utca helyszíneken."
     },
     {
-        "icon": "",
+        "icon": "Toolbox",
         "colorRef": "elsodleges",
         "title": "Gépek, járművek",
         "amount": "45 millió Ft",
         "desc": "A falugondnokság részére új gépek és berendezések beszerzése: teherautó, seprőgép adapter, nagyteljesítményű ágdaráló."
     },
     {
-        "icon": "",
+        "icon": "Landmark",
         "colorRef": "elsodleges",
         "title": "Urnafal bővítése",
         "amount": "2,5 millió Ft",
