@@ -91,7 +91,7 @@ export default function KeyIndicators({ data, historicalData }) {
                         </div>
                     </div>
                     <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                        Saját bevételek (adók, működési bevételek) aránya a teljes bevételből. Magasabb érték nagyobb önállóságot jelent.
+                        Saját bevételek (adók, működési bevételek, előző évi maradvány) aránya a teljes bevételből, levonva belőle a szolidaritási hozzájárulást. Magasabb érték nagyobb önállóságot jelent, de kiemelendő, hogy a saját bevételekből is elsősorban az önkormányzat kötelező feladatait kell finanszírozni, csak az ez után megmaradó rész fordítható önként vállalt feladatokra, fejlesztésre, tartalékképzésre.
                     </p>
                 </div>
 
@@ -107,7 +107,7 @@ export default function KeyIndicators({ data, historicalData }) {
                         </div>
                     </div>
                     <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                        Államháztartáson belüli támogatások aránya. Kiegészíti a puszta saját erőt.
+                        Államháztartáson belüli támogatások aránya. Normatív támogatás és pályázaton elnyert támogatások. Kiegészíti a puszta saját erőt.
                     </p>
                 </div>
 
@@ -123,7 +123,7 @@ export default function KeyIndicators({ data, historicalData }) {
                         </div>
                     </div>
                     <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                        Személyi és dologi kiadások aránya az összkiadásból. Alacsonyabb érték = több pénz marad fejlesztésekre.
+                        Személyi és dologi kiadások, az intézmények finanszírozása (óvoda, önkormányzati hivatal) aránya az összkiadásból. Alacsonyabb érték = több pénz marad fejlesztésekre, tartalékképzésre.
                     </p>
                 </div>
 
