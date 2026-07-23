@@ -46,8 +46,8 @@ export default function BudgetExplanation() {
                         <h4 style={{ fontSize: '1.1rem', margin: 0, color: 'var(--text-main)' }}>2. Működési kiadások</h4>
                     </div>
                     <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', lineHeight: 1.6, margin: 0 }}>
-                        A település mindennapos túléléséhez szükséges anyagi források. Ide tartoznak a bérköltségek (személyi juttatások), a közműdíjak és külsős szolgáltatások (dologi kiadások),
-                        valamint az <strong>állam felé fizetendő, kötelező szolidaritási hozzájárulás</strong> (ami a tehetősebb településektől elvont pénz a szegényebbek javára).
+                        A település mindennapos túléléséhez szükséges anyagi források. Ide tartoznak az önkormányzat közvetlen kiadásaiként jelentkező bérköltségek (személyi juttatások), a közműdíjak és külsős szolgáltatások (dologi kiadások), az önkormányzat két intézményének (Dimbes-Dombos Óvoda, Sóskúti Közös Önkormányzati Hivatal) finanszírozásához szükséges összegek,
+                        valamint az <strong>állam felé fizetendő, kötelező szolidaritási hozzájárulás</strong> (ami a tehetősebb településektől elvont pénz elvileg a szegényebbek javára).
                     </p>
                 </div>
 
@@ -57,7 +57,7 @@ export default function BudgetExplanation() {
                         <div style={{ padding: '0.8rem', background: 'rgba(59, 130, 246, 0.15)', borderRadius: '12px', color: '#3b82f6' }}>
                             <TrendingUp size={24} />
                         </div>
-                        <h4 style={{ fontSize: '1.1rem', margin: 0, color: 'var(--text-main)' }}>3. Beruházások (felhalmozás)</h4>
+                        <h4 style={{ fontSize: '1.1rem', margin: 0, color: 'var(--text-main)' }}>3. Beruházások, felújítások (felhalmozás)</h4>
                     </div>
                     <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', lineHeight: 1.6, margin: 0 }}>
                         Ezekből a forrásokból épülnek az új utak, óvodák, egészségügyi intézmények és újulnak meg a közterek.
