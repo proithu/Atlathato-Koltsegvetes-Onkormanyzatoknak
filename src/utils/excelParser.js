@@ -2,11 +2,12 @@ import * as XLSX from 'xlsx';
 import config from '../config/config.json';
 
 // Utility to clean up and parse a cell value as a number
+const EZER = 1000;
 const parseValue = (val) => {
     if (val === undefined || val === null || val === '-' || val === '') return 0;
-    if (typeof val === 'number') return val;
+    if (typeof val === 'number') return val * EZER;
     const num = Number(String(val).replace(/[^0-9.-]+/g, ''));
-    return isNaN(num) ? 0 : num;
+    return isNaN(num) ? 0 : num * EZER;
 };
 
 /**
