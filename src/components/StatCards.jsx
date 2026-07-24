@@ -41,7 +41,7 @@ export default function StatCards({ data }) {
                 <div className="flex justify-between items-center">
                     <div>
                         <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', fontWeight: 600, textTransform: 'uppercase', display: 'flex', alignItems: 'center' }}>
-                            Működési költségvetési bevétel ({data.year})
+                            Költségvetési bevétel ({data.year})
                             {data.yoy && formatYoY(data.yoy.incomeTotal)}
                         </p>
                         <h2 style={{ fontSize: '2rem', marginTop: '0.5rem' }}>{formatCurrency(data.income.total)}</h2>
