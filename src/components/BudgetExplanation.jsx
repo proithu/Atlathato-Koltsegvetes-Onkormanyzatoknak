@@ -33,7 +33,7 @@ export default function BudgetExplanation() {
                         <h4 style={{ fontSize: '1.1rem', margin: 0, color: 'var(--text-main)' }}>1. A tervezési folyamat</h4>
                     </div>
                     <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', lineHeight: 1.6, margin: 0 }}>
-                        A következő év költségvetésének tervezése már az előző év őszén elkezdődik. Először a <strong>kötelező feladatokat</strong> ({config.szovegek.kisokosPeldak.kotelezo}) kell biztosítani. Miután ezek megvannak, a fennmaradó keretet a képviselő-testület a <strong>{config.szovegek.kisokosPeldak.onkentes}</strong> (önként vállalt feladatok) csoportosítja.
+                        A következő év költségvetésének tervezése már az előző év őszén elkezdődik. Először a <strong>kötelező feladatokat</strong> ({config.szovegek.kisokosPeldak.kotelezo}) kell biztosítani. Miután ezek megvannak, a fennmaradó keretet a képviselő-testület a <strong>{config.szovegek.kisokosPeldak.onkentes}</strong> (önként vállalt feladatok) csoportosítja.Az állam több esetben ír elő olyan kötelezettséget, amely növeli a működtetési terhet. Ilyenek pl. központilag elrendelt béremelések. Ehhez vagy egészben, vagy részben biztosít kötelezően erre fordítandó támogatást. Vagy előírja, hogy melyik saját bevétel terhére kell finanszírozni. 
                     </p>
                 </div>
 
